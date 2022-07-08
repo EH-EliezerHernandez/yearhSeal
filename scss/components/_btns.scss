@@ -1,0 +1,27 @@
+/*********************************\
+        $BTNS
+\*********************************/
+
+.btn{  
+        display: inline-block;
+        padding: 14px;
+        font-weight: selecFontWeight(semiBold);
+        cursor: pointer;
+        border-radius: 8px;
+        @include font-size(big);
+        
+        
+        &--primary{
+                margin-top: 36px;
+                border: none;
+                color: selecColorText(white);
+                background-color: selecColorBg(hospital-green);
+        }
+
+        &--secundary{
+                margin-top: 52px;
+                border: 1px solid selecColorBg(hospital-green);
+                color: selecColorText(hospital-green); 
+                background-color: selecColorBg(white);
+        }
+}

@@ -1,0 +1,20 @@
+/*********************************\
+        $CREATE ACOUNTS
+\*********************************/
+
+.create{
+    padding-top: 60px;
+    align-content: start;
+    grid-template-rows: .2fr 1fr;
+
+    &__header{
+        align-self: end;
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    &__title{
+        text-align: start;
+        @include font-size(big);
+    }
+}

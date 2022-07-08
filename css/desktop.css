@@ -1,0 +1,129 @@
+/*********************************\
+        $VARIABLES
+\*********************************/
+/*---------DEFINICION DE COLORES-------*/
+/*---------COLORS TEXT----------------- */
+/*---------COLORS BACKGROUND */
+/*---------FONT SIZES-------*/
+/*---------FONT WEIGHTS------*/
+/*--------FONTS FAMILY-------*/
+/*********************************\
+        $FUNCTIONS
+\*********************************/
+/*********************************\
+        $MIXINS
+\*********************************/
+/*********************************\
+        $HEADERS
+\*********************************/
+ul .selected {
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+  padding-right: 12px;
+  color: #ACD9B2;
+  border: 1px solid #ACD9B2;
+  border-radius: 10px;
+}
+
+/*********************************\
+        $LOGOS
+\*********************************/
+.logo--desktop {
+  display: none;
+}
+
+/*********************************\
+        $BTNS
+\*********************************/
+.btn--secundario {
+  margin-top: 40px;
+}
+
+/*********************************\
+        $HEADERS
+\*********************************/
+.header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: #FFFFFF;
+}
+
+/*********************************\
+        $NAVS
+\*********************************/
+.nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 48px 1fr 48px auto 48px auto;
+  grid-template-columns: auto 1fr auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  width: 92%;
+}
+.nav__list-enlaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.nav__enlace {
+  font-weight: 600;
+  color: #C7C7C7;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.nav__acount-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.nav__enlace--sign-in {
+  color: #ACD9B2;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+/*********************************\
+        $LOGINS
+\*********************************/
+.login {
+  -ms-grid-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+}
+.login__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+/*********************************\
+        $CREATE ACOUNTS
+\*********************************/
+.create {
+  -ms-grid-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+}

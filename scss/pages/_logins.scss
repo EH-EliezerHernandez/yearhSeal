@@ -1,0 +1,22 @@
+/*********************************\
+        $LOGINS
+\*********************************/
+
+.login{
+    grid-template-rows: .5fr 1fr;
+
+    &__header{
+        grid-template-rows: none;
+        align-items: end;
+        margin-bottom: 48px;
+    }
+
+    &__contenido{
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+    }
+    &__form-container{
+        display: grid;
+    }
+}

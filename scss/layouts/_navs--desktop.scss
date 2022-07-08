@@ -1,0 +1,41 @@
+/*********************************\
+        $NAVS
+\*********************************/
+
+.nav{
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        align-items: center;
+        column-gap: 48px;
+        padding: {
+                top: 12px;
+                bottom: 12px;
+        }
+        margin: 0 auto;
+        width: 92%;
+        
+        &__list-enlaces{
+                display: flex;
+                column-gap: 20px;
+        }
+
+
+        &__enlace{
+                font-weight: selecFontWeight(semiBold);
+                color: selecColorText(very-light-pink);
+                @include font-size(normal);
+        }
+
+        
+        &__acount-action{
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+        }
+
+
+        &__enlace--sign-in{
+                color: selecColorText(hospital-green);
+                @include font-size(small);
+        }
+}

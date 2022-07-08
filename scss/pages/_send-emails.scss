@@ -1,0 +1,33 @@
+/*********************************\
+        $SENDS
+\*********************************/
+
+.send{
+        &__header{
+                margin-bottom: 24px;
+        }
+        &__icon-container{
+                justify-self: center;
+                padding: 20px;
+                display: grid;
+                width: min-content;
+                aspect-ratio: 1 / 1;
+                place-content: center center;
+                border-radius: 50%;
+                background-color: selecColorBg(text-input-field);
+        }
+        &__icon{
+                height: 58px;
+                width: 90px;     
+        }
+        &__mensage-resent{
+                margin-top: 28px;
+                text-align: center;
+                color: rgba(selecColorText(black),.5);
+                font-weight: selecFontWeight(semiBold);
+                @include font-size(small);
+        }
+        &__resent-enlace{
+                color: selecColorText(hospital-green);
+        }
+}

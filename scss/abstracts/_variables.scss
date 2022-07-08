@@ -1,0 +1,54 @@
+/*********************************\
+        $VARIABLES
+\*********************************/
+
+/*---------DEFINICION DE COLORES-------*/
+    
+    $white: #FFFFFF;
+    $black: #000000;
+    $dark: #232830;
+    $very-light-pink: #C7C7C7;
+    $text-input-field: #F7F7F7;
+    $hospital-green: #ACD9B2;
+
+
+/*---------COLORS TEXT----------------- */
+    
+    $colors-text: (
+        hospital-green: $hospital-green,
+        black: $black,
+        very-light-pink: $very-light-pink,
+        white: $white,
+    );
+
+
+/*---------COLORS BACKGROUND */
+    
+    $colors-background: (
+        hospital-green: $hospital-green,
+        text-input-field: $text-input-field, 
+        white: $white,
+    );
+
+
+/*---------FONT SIZES-------*/
+    
+    $font-sizes: (
+        small: 14px,
+        normal: 16px,
+        big: 18px,
+        x-big: 22px,
+    );
+
+
+/*---------FONT WEIGHTS------*/
+
+$fonts-weight: (
+        normal: 400,
+        semiBold: 600,
+        bold: 700,
+    );
+
+/*--------FONTS FAMILY-------*/
+    
+    $font-principal: 'Quicksand', sans-serif;

@@ -1,0 +1,13 @@
+/*********************************\
+        $LOGINS
+\*********************************/
+
+.login{
+    grid-template-rows: .5fr 1fr;
+
+    &__contenido{
+        display: flex;
+        flex-direction: column; 
+        justify-content: start;
+    }
+}

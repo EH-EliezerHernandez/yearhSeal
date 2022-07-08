@@ -1,0 +1,15 @@
+/*********************************\
+        $HEADERS
+\*********************************/
+
+ul .selected{
+    padding: {
+        top: 4px;
+        left: 12px;
+        bottom: 4px;
+        right: 12px;
+    };
+    color: selecColorText(hospital-green);
+    border: 1px solid selecColorBg(hospital-green);
+    border-radius: 10px;
+}

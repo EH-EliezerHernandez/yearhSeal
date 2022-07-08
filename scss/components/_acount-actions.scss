@@ -1,0 +1,64 @@
+/*********************************\
+        $ACOUNT-ACTIONS
+\*********************************/
+
+.acount-action{
+        display: grid;
+        align-content: center;
+        height: 100vh;
+        min-height: min-content;
+        width: 90%;
+        max-width: 336px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+
+
+        &__header{
+                display: grid;
+                max-width: 340px;
+                grid-template-rows: 101px 1fr 1fr;
+                justify-items: center;
+                margin-bottom: 34px;
+        }
+
+        &__header--login{
+                grid-template-rows: none;
+                margin-bottom: 48px;
+                
+        }
+
+        &__title{
+                grid-row: 2 / 3;
+                text-align: center;
+                @include font-size(normal);
+        }
+
+
+        &__description{
+                grid-row: 3 / 4;
+                text-align: center;
+                color: rgba(selecColorText(black),.5);
+                @include font-size(normal);
+        }
+
+        &__mensage-enlace{
+                margin-top: 28px;
+                text-align: center;
+                color: rgba(selecColorText(black),.5);
+                font-weight: selecFontWeight(semiBold);
+                @include font-size(small);
+        }
+
+
+        &__enlace{
+                text-align: center;
+                color: selecColorText(hospital-green);
+                @include font-size(small);
+                
+        }
+
+        &__enlace--margin{
+                margin-top: 28px;
+                font-weight: selecFontWeight(semiBold);
+        }
+}

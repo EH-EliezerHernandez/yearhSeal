@@ -1,0 +1,303 @@
+/*********************************\
+        $VARIABLES
+\*********************************/
+/*---------DEFINICION DE COLORES-------*/
+/*---------COLORS TEXT----------------- */
+/*---------COLORS BACKGROUND */
+/*---------FONT SIZES-------*/
+/*---------FONT WEIGHTS------*/
+/*--------FONTS FAMILY-------*/
+/*********************************\
+        $FUNCTIONS
+\*********************************/
+/*********************************\
+        $MIXINS
+\*********************************/
+/*********************************\
+        $RESETS
+\*********************************/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+picture {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+/*********************************\
+        $LOGOS
+\*********************************/
+.logo {
+  width: 150px;
+  height: 31px;
+}
+.logo--big {
+  width: 200px;
+  height: 41px;
+}
+
+/*********************************\
+        $BTNS
+\*********************************/
+.btn {
+  display: inline-block;
+  padding: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.btn--primary {
+  margin-top: 36px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #ACD9B2;
+}
+.btn--secundary {
+  margin-top: 52px;
+  border: 1px solid #ACD9B2;
+  color: #ACD9B2;
+  background-color: #FFFFFF;
+}
+
+/*********************************\
+        $ACOUNT-ACTIONS
+\*********************************/
+.acount-action {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  width: 90%;
+  max-width: 336px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.acount-action__header {
+  display: -ms-grid;
+  display: grid;
+  max-width: 340px;
+  -ms-grid-rows: 101px 1fr 1fr;
+  grid-template-rows: 101px 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 34px;
+}
+.acount-action__header--login {
+  -ms-grid-rows: none;
+  grid-template-rows: none;
+  margin-bottom: 48px;
+}
+.acount-action__title {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.acount-action__description {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.acount-action__mensage-enlace {
+  margin-top: 28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.acount-action__enlace {
+  text-align: center;
+  color: #ACD9B2;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.acount-action__enlace--margin {
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+/*********************************\
+        $HEADERS
+\*********************************/
+.header {
+  display: none;
+}
+
+/*********************************\
+        $FORMS
+\*********************************/
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form--space-berween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__container-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__label {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.form__input {
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  padding-right: 8px;
+  border: none;
+  border-radius: 12px;
+  background-color: #F7F7F7;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 22px;
+}
+.form__input:last-of-type {
+  margin-bottom: 0;
+}
+.form__input--text-small {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+/*********************************\
+        $SENDS
+\*********************************/
+.send__header {
+  margin-bottom: 24px;
+}
+.send__icon-container {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  aspect-ratio: 1/1;
+  place-content: center center;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+}
+.send__icon {
+  height: 58px;
+  width: 90px;
+}
+.send__mensage-resent {
+  margin-top: 28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.send__resent-enlace {
+  color: #ACD9B2;
+}
+
+/*********************************\
+        $LOGINS
+\*********************************/
+.login {
+  -ms-grid-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+}
+.login__header {
+  -ms-grid-rows: none;
+  grid-template-rows: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 48px;
+}
+.login__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.login__form-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+/*********************************\
+        $CREATE ACOUNTS
+\*********************************/
+.create {
+  padding-top: 60px;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -ms-grid-rows: 0.2fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+}
+.create__header {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  display: block;
+  margin-bottom: 40px;
+}
+.create__title {
+  text-align: start;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
