@@ -3,10 +3,12 @@
 \*********************************/
 
 .acount-action{
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
         display: grid;
-        align-content: center;
-        height: 100vh;
-        min-height: min-content;
         width: 90%;
         max-width: 336px;
         margin: 0 auto;
@@ -15,9 +17,9 @@
 
         &__header{
                 display: grid;
-                max-width: 340px;
-                grid-template-rows: 101px 1fr 1fr;
+                align-content: end;
                 justify-items: center;
+                max-width: 340px;
                 margin-bottom: 34px;
         }
 

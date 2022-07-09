@@ -3,8 +3,7 @@
 \*********************************/
 
 .login{
-    grid-template-rows: .5fr 1fr;
-
+    top: 32px;
     &__contenido{
         display: flex;
         flex-direction: column; 
