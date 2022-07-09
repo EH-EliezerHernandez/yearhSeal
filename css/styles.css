@@ -14,6 +14,24 @@
         $MIXINS
 \*********************************/
 /*********************************\
+        $HEADERS
+\*********************************/
+.wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+ul .selected {
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+  padding-right: 12px;
+  color: #ACD9B2;
+  border: 1px solid #ACD9B2;
+  border-radius: 10px;
+}
+
+/*********************************\
         $RESETS
 \*********************************/
 html {
@@ -58,6 +76,10 @@ ul, ol {
   width: 200px;
   height: 41px;
 }
+.logo--margin-bottom {
+  display: inline-block;
+  margin-bottom: 72px;
+}
 
 /*********************************\
         $BTNS
@@ -88,14 +110,14 @@ ul, ol {
         $ACOUNT-ACTIONS
 \*********************************/
 .acount-action {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100vh;
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
-  min-height: min-content;
   width: 90%;
   max-width: 336px;
   margin: 0 auto;
@@ -104,10 +126,10 @@ ul, ol {
 .acount-action__header {
   display: -ms-grid;
   display: grid;
-  max-width: 340px;
-  -ms-grid-rows: 101px 1fr 1fr;
-  grid-template-rows: 101px 1fr 1fr;
+  -ms-flex-line-pack: end;
+      align-content: end;
   justify-items: center;
+  max-width: 340px;
   margin-bottom: 34px;
 }
 .acount-action__header--login {
@@ -214,6 +236,11 @@ ul, ol {
 /*********************************\
         $SENDS
 \*********************************/
+.send {
+  top: 80px;
+  -ms-grid-rows: 1fr auto auto 1fr;
+  grid-template-rows: 1fr auto auto 1fr;
+}
 .send__header {
   margin-bottom: 24px;
 }
@@ -251,8 +278,7 @@ ul, ol {
         $LOGINS
 \*********************************/
 .login {
-  -ms-grid-rows: 0.5fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
+  bottom: 0;
 }
 .login__header {
   -ms-grid-rows: none;
@@ -283,11 +309,9 @@ ul, ol {
         $CREATE ACOUNTS
 \*********************************/
 .create {
-  padding-top: 60px;
+  top: 60px;
   -ms-flex-line-pack: start;
       align-content: start;
-  -ms-grid-rows: 0.2fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
 }
 .create__header {
   -ms-flex-item-align: end;

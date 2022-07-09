@@ -2,6 +2,11 @@
         $HEADERS
 \*********************************/
 
+.wrapper{
+    position: relative;
+    height: 100vh;
+}
+
 ul .selected{
     padding: {
         top: 4px;

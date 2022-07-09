@@ -16,6 +16,11 @@
 /*********************************\
         $HEADERS
 \*********************************/
+.wrapper {
+  position: relative;
+  height: 100vh;
+}
+
 ul .selected {
   padding-top: 4px;
   padding-left: 12px;
@@ -104,8 +109,7 @@ ul .selected {
         $LOGINS
 \*********************************/
 .login {
-  -ms-grid-rows: 0.5fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
+  top: 32px;
 }
 .login__contenido {
   display: -webkit-box;
