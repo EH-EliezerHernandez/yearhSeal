@@ -195,7 +195,7 @@ ul, ol {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.form--space-berween {
+.form--space-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -314,6 +314,8 @@ ul, ol {
   top: 60px;
   -ms-flex-line-pack: start;
       align-content: start;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 .create__header {
   -ms-flex-item-align: end;

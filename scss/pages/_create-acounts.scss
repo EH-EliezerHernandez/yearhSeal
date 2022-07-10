@@ -5,6 +5,7 @@
 .create{
     top: 60px;
     align-content: start;
+    grid-template-rows: auto auto;
 
     &__header{
         align-self: end;

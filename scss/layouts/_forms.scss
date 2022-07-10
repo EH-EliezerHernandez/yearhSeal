@@ -7,9 +7,10 @@
     display: flex;
     flex-direction: column;
     
-    &--space-berween{
+    &--space-between{
         justify-content: space-between;
     }
+    
 
     &__container-input{
         display: flex;
