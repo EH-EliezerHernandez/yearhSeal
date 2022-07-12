@@ -3,14 +3,11 @@
 \*********************************/
 
 .acount-action{
-        position: absolute;
-        top: 120px;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%);
-        display: grid;
+        display: grid;       
+        height: 100vh;
         width: 90%;
         max-width: 336px;
+        min-width: 300px;
         margin: 0 auto;
         padding-bottom: 20px;
 
@@ -21,12 +18,6 @@
                 justify-items: center;
                 max-width: 340px;
                 margin-bottom: 34px;
-        }
-
-        &__header--login{
-                grid-template-rows: none;
-                margin-bottom: 48px;
-                
         }
 
         &__title{

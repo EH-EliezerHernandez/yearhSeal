@@ -16,11 +16,6 @@
 /*********************************\
         $HEADERS
 \*********************************/
-.wrapper {
-  position: relative;
-  height: 100vh;
-}
-
 ul .selected {
   padding-top: 4px;
   padding-left: 12px;
@@ -119,7 +114,14 @@ ul .selected {
         $LOGINS
 \*********************************/
 .login {
-  top: 32px;
+  -ms-grid-rows: none;
+  grid-template-rows: none;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  padding-top: 180px;
+}
+.login__header {
+  display: none;
 }
 .login__contenido {
   display: -webkit-box;
@@ -138,6 +140,23 @@ ul .selected {
         $CREATE ACOUNTS
 \*********************************/
 .create {
-  -ms-grid-rows: 0.5fr auto;
-  grid-template-rows: 0.5fr auto;
+  padding-top: 180px;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -ms-grid-rows: none;
+  grid-template-rows: none;
+}
+
+/*********************************\
+        $SENDS
+\*********************************/
+.send {
+  padding-top: 180px;
+}
+
+/*********************************\
+        $NEW-PASSWORD
+\*********************************/
+.new-password {
+  padding-top: 220px;
 }

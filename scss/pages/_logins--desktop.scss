@@ -3,7 +3,14 @@
 \*********************************/
 
 .login{
-    top: 32px;
+    grid-template-rows: none;
+    align-content: start;
+    padding-top: 180px;
+
+    &__header{
+        display: none;
+    }
+
     &__contenido{
         display: flex;
         flex-direction: column; 

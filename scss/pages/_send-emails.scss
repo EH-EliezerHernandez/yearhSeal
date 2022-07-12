@@ -3,9 +3,8 @@
 \*********************************/
 
 .send{
-        top: 80px;
-        grid-template-rows: 1fr auto auto 1fr;
-
+        padding-top: 120px;
+        align-content: start;
         
         &__header{
                 margin-bottom: 24px;
