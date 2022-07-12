@@ -1,0 +1,15 @@
+/*********************************\
+        $Acount
+\*********************************/
+
+.acount{
+    &__valor{
+        margin-bottom: 36px; 
+        color: rgba(selecColorText(black),.5);
+        @include font-size(normal);
+    }
+
+    &__valor:last-of-type{
+        margin-bottom: 0; 
+    }
+}
