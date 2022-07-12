@@ -3,11 +3,11 @@
 \*********************************/
 
 .login{
-    bottom: 0;
+    grid-template-rows: auto 1fr;
+    padding-top: 120px;
 
     &__header{
         grid-template-rows: none;
-        align-items: end;
         margin-bottom: 48px;
     }
 

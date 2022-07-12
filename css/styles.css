@@ -16,11 +16,6 @@
 /*********************************\
         $HEADERS
 \*********************************/
-.wrapper {
-  position: relative;
-  height: 100vh;
-}
-
 ul .selected {
   padding-top: 4px;
   padding-left: 12px;
@@ -110,16 +105,12 @@ ul, ol {
         $ACOUNT-ACTIONS
 \*********************************/
 .acount-action {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
   display: -ms-grid;
   display: grid;
+  height: 100vh;
   width: 90%;
   max-width: 336px;
+  min-width: 300px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -131,11 +122,6 @@ ul, ol {
   justify-items: center;
   max-width: 340px;
   margin-bottom: 34px;
-}
-.acount-action__header--login {
-  -ms-grid-rows: none;
-  grid-template-rows: none;
-  margin-bottom: 48px;
 }
 .acount-action__title {
   -ms-grid-row: 2;
@@ -239,9 +225,9 @@ ul, ol {
         $SENDS
 \*********************************/
 .send {
-  top: 80px;
-  -ms-grid-rows: 1fr auto auto 1fr;
-  grid-template-rows: 1fr auto auto 1fr;
+  padding-top: 120px;
+  -ms-flex-line-pack: start;
+      align-content: start;
 }
 .send__header {
   margin-bottom: 24px;
@@ -280,14 +266,13 @@ ul, ol {
         $LOGINS
 \*********************************/
 .login {
-  bottom: 0;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
+  padding-top: 120px;
 }
 .login__header {
   -ms-grid-rows: none;
   grid-template-rows: none;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   margin-bottom: 48px;
 }
 .login__contenido {
@@ -311,11 +296,11 @@ ul, ol {
         $CREATE ACOUNTS
 \*********************************/
 .create {
-  top: 60px;
+  padding-top: 80px;
   -ms-flex-line-pack: start;
       align-content: start;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
 }
 .create__header {
   -ms-flex-item-align: end;
@@ -328,4 +313,13 @@ ul, ol {
   text-align: start;
   font-size: 1.125rem;
   line-height: 1.6875rem;
+}
+
+/*********************************\
+        $NEW-PASSWORD
+\*********************************/
+.new-password {
+  padding-top: 120px;
+  -ms-flex-line-pack: start;
+      align-content: start;
 }
