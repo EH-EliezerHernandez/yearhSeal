@@ -323,3 +323,16 @@ ul, ol {
   -ms-flex-line-pack: start;
       align-content: start;
 }
+
+/*********************************\
+        $Acount
+\*********************************/
+.acount__valor {
+  margin-bottom: 36px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.acount__valor:last-of-type {
+  margin-bottom: 0;
+}
