@@ -27,6 +27,10 @@ ul .selected {
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   width: 92%;

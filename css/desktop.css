@@ -27,6 +27,10 @@ ul .selected {
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   width: 92%;
@@ -111,6 +115,55 @@ ul .selected {
 .nav__enlace--sign-in {
   color: #ACD9B2;
   font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.nav__container-acount {
+  position: relative;
+}
+.nav__acount-name {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.nav__acount-icon {
+  margin-left: 4px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+}
+.nav__list-option {
+  position: absolute;
+  min-width: 160px;
+  padding: 24px 20px;
+  right: 0px;
+  top: calc(100% + 19px);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.nav__acount-option {
+  text-align: end;
+}
+.nav__acount-option:last-of-type {
+  border-top: 1px solid rgba(199, 199, 199, 0.3);
+}
+.nav__acount-enlace {
+  display: inline-block;
+  padding-right: 8px;
+  font-weight: 700;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.nav__acount-option:not(:last-child) .nav__acount-enlace {
+  margin-bottom: 28px;
+}
+.nav__acount-enlace--sign-out {
+  padding-top: 18px;
+  padding-right: 8px;
+  color: #ACD9B2;
   font-size: 0.875rem;
   line-height: 1.3125rem;
 }

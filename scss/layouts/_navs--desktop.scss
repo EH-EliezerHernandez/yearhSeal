@@ -39,4 +39,57 @@
                 font-weight: selecFontWeight(bold);
                 @include font-size(small);
         }
+        
+        &__container-acount{
+                position: relative;
+                
+        }
+        
+        &__acount-name{
+                color: rgba(selecColorText(black),.8);
+                @include font-size(small);
+        }
+        
+        &__acount-icon{
+                margin-left: 4px;
+                color: rgba(selecColorText(black), .3 );
+                @include font-size(x-small);
+        }
+        &__list-option{
+                position: absolute;
+                min-width: 160px;
+                padding: 24px 20px;
+                right: 0px;
+                top: calc( 100% + 19px);
+                border-radius: 4px;
+                background-color: selecColorBg(white);
+                box-shadow: 0px 0px 4px 0px rgba(selecColorText(black),.15);
+        }
+
+        &__acount-option{
+                text-align: end;        
+        }
+        
+        &__acount-option:last-of-type{
+                border-top: 1px solid rgba(selecColorText(very-light-pink),.3);
+                
+        }
+        &__acount-enlace{
+                display: inline-block;
+                padding-right: 8px;
+                font-weight: selecFontWeight(bold);
+                color: selecColorText(black);
+                @include font-size(normal);
+        }
+        
+        &__acount-option:not(:last-child) &__acount-enlace{
+                margin-bottom: 28px;
+        }
+
+        &__acount-enlace--sign-out{
+                padding-top: 18px;
+                padding-right: 8px;
+                color: selecColorText(hospital-green);
+                @include font-size(small);
+        }
 }
