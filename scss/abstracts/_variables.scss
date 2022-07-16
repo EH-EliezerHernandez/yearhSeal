@@ -52,3 +52,10 @@ $fonts-weight: (
 /*--------FONTS FAMILY-------*/
     
     $font-principal: 'Quicksand', sans-serif;
+
+/*--------ARTICLE SIZE-------*/
+
+    $sizes-article: (
+        small: 140px,
+        normal: 240px,
+    );

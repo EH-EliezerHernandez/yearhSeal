@@ -7,6 +7,7 @@
 /*---------FONT SIZES-------*/
 /*---------FONT WEIGHTS------*/
 /*--------FONTS FAMILY-------*/
+/*--------ARTICLE SIZE-------*/
 /*********************************\
         $FUNCTIONS
 \*********************************/
@@ -24,6 +25,11 @@ ul .selected {
   color: #ACD9B2;
   border: 1px solid #ACD9B2;
   border-radius: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 92%;
 }
 
 /*********************************\
@@ -82,6 +88,7 @@ ul, ol {
 .btn {
   display: inline-block;
   padding: 14px;
+  border: none;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -99,6 +106,19 @@ ul, ol {
   border: 1px solid #ACD9B2;
   color: #ACD9B2;
   background-color: #FFFFFF;
+}
+.btn--add-car {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background-color: white;
+  border: 2px solid rgba(199, 199, 199, 0.18);
+  border-radius: 50%;
+}
+.btn__icon {
+  height: 44px;
+  width: 44px;
 }
 
 /*********************************\
@@ -160,12 +180,59 @@ ul, ol {
 }
 
 /*********************************\
+        $CARDS
+\*********************************/
+.card__imagen {
+  width: 140px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.card__info {
+  margin-top: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__price {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.card__title {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.card__button-container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+/*********************************\
         $HEADERS
 \*********************************/
 .header {
   display: none;
-  -webkit-box-shadow: 0px -8px 16px -5px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px -8px 16px -5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  /* -webkit-box-shadow: 0px -8px 16px -5px rgba(0,0,0,0.80);
+  -moz-box-shadow: 0px -8px 16px -5px rgba(0,0,0,0.80);
+  box-shadow: 0px -8px 16px -5px rgba(0,0,0,0.80); */
 }
 
 /*********************************\
@@ -325,7 +392,7 @@ ul, ol {
 }
 
 /*********************************\
-        $Acount
+        $ACOUNTS
 \*********************************/
 .acount__valor {
   margin-bottom: 36px;
@@ -335,4 +402,19 @@ ul, ol {
 }
 .acount__valor:last-of-type {
   margin-bottom: 0;
+}
+
+/*********************************\
+        $ARTICULOS
+\*********************************/
+.articulo {
+  padding-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 140px);
+  row-gap: 24px;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  place-content: center;
 }
