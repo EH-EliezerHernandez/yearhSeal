@@ -1,0 +1,12 @@
+/*********************************\
+        $ARTICULOS
+\*********************************/
+
+.articulo{
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,map-get($sizes-article,small));
+    row-gap: 24px;
+    column-gap: 12px;
+    place-content: center;
+}

@@ -1,0 +1,7 @@
+/*********************************\
+        $ARTICULOS
+\*********************************/
+.articulo{
+    grid-template-columns: repeat(auto-fill,map-get($sizes-article,normal));
+    gap: 24px;
+}

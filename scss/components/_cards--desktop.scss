@@ -1,0 +1,10 @@
+/*********************************\
+        $CARDS
+\*********************************/
+
+.card{
+    &__imagen{
+        width: map-get($sizes-article,normal);
+        height: map-get($sizes-article,normal);
+    }
+}
